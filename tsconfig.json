@@ -1,0 +1,27 @@
+{
+    "include": ["src"],
+    // "include": TypeScript 컴파일러가 처리할 파일이 위치한 폴더 지정
+    // 이 배열에 지정된 폴더 내의 모든 TypeScript 파일들이 컴파일 대상으로 포함된다.
+
+    "compilerOptions": {
+        "outDir": "build",
+        // "outDir": 컴파일된 파일들이 저장될 디렉터리 지정
+        // 지정된 디렉토리에 TypeScript 코드가 JavaScript 코드로 컴파일되어 저장된다.
+
+        "target": "ES6",
+        // "target": 컴파일된 JavaScript 코드의 ECMAScript 버전 설정
+        // ES6로 설정하면, 컴파일러는 ES6(ES2015) 호환 코드를 생성한다.
+
+        "lib": ["DOM", "ES6"],
+        // "lib": 컴파일 시 포함할 라이브러리 종류 설정
+        // 'DOM'은 웹 브라우저의 DOM API를, 'ES6'는 ES6 기능을 사용할 수 있도록 타입 정의를 포함하고 있다.
+
+        "strict": true,
+        // "strict": 모든 엄격한 타입 체크 옵션 활성화
+        // 타입 안정성을 최대화하고, 잠재적인 오류를 줄이기 위해 모든 엄격한 타입 검사 옵션을 활성화 해준다.
+
+        "allowJs": true
+        // "allowJs": JavaScript 파일의 컴파일을 허용
+        // TypeScript 프로젝트 내에서 JavaScript 파일(.js)도 컴파일 과정에 포함시킬 수 있다.
+    }
+}
